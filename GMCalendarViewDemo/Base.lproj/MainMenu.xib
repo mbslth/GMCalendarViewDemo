@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6233" systemVersion="14A329f" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6233"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -11,9 +12,13 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="calendarView" destination="ZSJ-zg-Lnb" id="nfy-61-xW1"/>
+                <outlet property="monthMode" destination="2DS-oo-beE" id="Q9Z-LW-yjH"/>
+                <outlet property="startFromMonday" destination="rLV-x8-bI0" id="277-3M-Wij"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+                <outlet property="yearMode" destination="Kph-oA-f1i" id="9hh-NO-Gb1"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -669,12 +674,72 @@
         <window title="GMCalendarViewDemo" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="373"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="373"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZSJ-zg-Lnb">
+                        <rect key="frame" x="14" y="44" width="454" height="319"/>
+                    </customView>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="2DS-oo-beE">
+                        <rect key="frame" x="19" y="16" width="72" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="8yV-Fa-Vrr"/>
+                            <constraint firstAttribute="width" constant="69" id="Hze-dw-5dT"/>
+                        </constraints>
+                        <buttonCell key="cell" type="radio" title="Month" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="dhy-ts-8Tn">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="monthModeChanged:" target="Voe-Tx-rLC" id="hyH-NS-AWw"/>
+                        </connections>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="Kph-oA-f1i">
+                        <rect key="frame" x="102" y="16" width="72" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="hLa-BF-KD4"/>
+                        </constraints>
+                        <buttonCell key="cell" type="radio" title="Year" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="k2r-Ce-KAT">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="monthModeChanged:" target="Voe-Tx-rLC" id="PfT-gn-PVV"/>
+                        </connections>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="rLV-x8-bI0">
+                        <rect key="frame" x="326" y="18" width="136" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="132" id="24P-da-son"/>
+                            <constraint firstAttribute="height" constant="14" id="Cod-Wr-h0D"/>
+                        </constraints>
+                        <buttonCell key="cell" type="check" title="Start from Monday" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="EgL-FW-j6y">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="startFromMondayChanged:" target="Voe-Tx-rLC" id="cHk-j2-qG9"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="2DS-oo-beE" secondAttribute="bottom" constant="17" id="4y4-ba-TLf"/>
+                    <constraint firstAttribute="trailing" secondItem="rLV-x8-bI0" secondAttribute="trailing" constant="20" id="5Oc-q2-g14"/>
+                    <constraint firstAttribute="trailing" secondItem="ZSJ-zg-Lnb" secondAttribute="trailing" constant="12" id="B8P-wC-Q3a"/>
+                    <constraint firstItem="Kph-oA-f1i" firstAttribute="baseline" secondItem="2DS-oo-beE" secondAttribute="baseline" id="Of8-y7-8JC"/>
+                    <constraint firstItem="ZSJ-zg-Lnb" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="14" id="Vwd-B1-Odp"/>
+                    <constraint firstItem="rLV-x8-bI0" firstAttribute="top" secondItem="ZSJ-zg-Lnb" secondAttribute="bottom" constant="10" id="YZW-Kq-5HX"/>
+                    <constraint firstItem="Kph-oA-f1i" firstAttribute="leading" secondItem="2DS-oo-beE" secondAttribute="trailing" constant="14" id="cBI-P8-pfH"/>
+                    <constraint firstItem="2DS-oo-beE" firstAttribute="top" secondItem="ZSJ-zg-Lnb" secondAttribute="bottom" constant="11" id="cEd-58-iJx"/>
+                    <constraint firstAttribute="bottom" secondItem="rLV-x8-bI0" secondAttribute="bottom" constant="20" id="psO-dn-dMr"/>
+                    <constraint firstItem="ZSJ-zg-Lnb" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="10" id="xix-hF-8vj"/>
+                    <constraint firstItem="2DS-oo-beE" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="zNH-pF-420"/>
+                </constraints>
             </view>
+            <point key="canvasLocation" x="318" y="457.5"/>
         </window>
     </objects>
 </document>

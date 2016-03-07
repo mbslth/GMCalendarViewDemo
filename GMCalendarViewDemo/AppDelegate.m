@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "Preferences.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+	Preferences *prefs;
+}
 
 @property (weak) IBOutlet NSWindow *window;
 @end
@@ -16,11 +19,47 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	// Insert code here to initialize your application
+	prefs = [Preferences sharedPreferences];
+
+	self.monthMode.state = (prefs.monthMode ? NSOnState : NSOffState);
+	self.yearMode.state = (prefs.monthMode ? NSOffState : NSOnState);
+	
+	self.startFromMonday.state = (prefs.startFromMonday ? NSOnState : NSOffState);
+
+	self.calendarView.wantsLayer = YES;
+	[self.calendarView.layer setBorderWidth: 2];
+	[self.calendarView.layer setCornerRadius: 10];
+	
+	self.calendarViewController = [[GMCalendarViewController alloc] initWithView:self.calendarView];
+	
+	self.calendarViewController.currentDate = [NSDate date];
+	
+	[self.calendarViewController reloadData];
+	
+	
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
 	// Insert code here to tear down your application
 }
 
+- (IBAction)monthModeChanged:(id)sender
+{
+	if (sender == self.monthMode) {
+		prefs.monthMode = YES;
+	} else {
+		prefs.monthMode = NO;
+	}
+	self.monthMode.state = (prefs.monthMode ? NSOnState : NSOffState);
+	self.yearMode.state = (prefs.monthMode ? NSOffState : NSOnState);
+	
+	[self.calendarViewController reloadData];
+	
+}
+
+- (IBAction)startFromMondayChanged:(id)sender
+{
+	prefs.startFromMonday = (self.startFromMonday.state == NSOnState ? YES : NO);
+	[self.calendarViewController reloadData];
+}
 @end

@@ -11,6 +11,9 @@
 		1BC3988A1C8D86A80078ECB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC398891C8D86A80078ECB8 /* main.m */; };
 		1BC3988C1C8D86A80078ECB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC3988B1C8D86A80078ECB8 /* Assets.xcassets */; };
 		1BC3988F1C8D86A80078ECB8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC3988D1C8D86A80078ECB8 /* MainMenu.xib */; };
+		1BC3989A1C8D87190078ECB8 /* GMCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC398981C8D87190078ECB8 /* GMCalendarViewController.m */; };
+		1BC3989B1C8D87190078ECB8 /* GMCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC398991C8D87190078ECB8 /* GMCalendarViewController.xib */; };
+		1BC3989F1C8D8A770078ECB8 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC3989E1C8D8A770078ECB8 /* Preferences.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,11 @@
 		1BC3988B1C8D86A80078ECB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BC3988E1C8D86A80078ECB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1BC398901C8D86A80078ECB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BC398971C8D87190078ECB8 /* GMCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMCalendarViewController.h; path = GMCalendarViewController/GMCalendarViewController.h; sourceTree = "<group>"; };
+		1BC398981C8D87190078ECB8 /* GMCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMCalendarViewController.m; path = GMCalendarViewController/GMCalendarViewController.m; sourceTree = "<group>"; };
+		1BC398991C8D87190078ECB8 /* GMCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GMCalendarViewController.xib; path = GMCalendarViewController/GMCalendarViewController.xib; sourceTree = "<group>"; };
+		1BC3989D1C8D8A770078ECB8 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
+		1BC3989E1C8D8A770078ECB8 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,8 @@
 		1BC398841C8D86A80078ECB8 /* GMCalendarViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1BC3989C1C8D8A510078ECB8 /* Preferences */,
+				1BC398961C8D86B20078ECB8 /* GMCalendarView */,
 				1BC398851C8D86A80078ECB8 /* AppDelegate.h */,
 				1BC398861C8D86A80078ECB8 /* AppDelegate.m */,
 				1BC3988B1C8D86A80078ECB8 /* Assets.xcassets */,
@@ -69,6 +79,25 @@
 				1BC398891C8D86A80078ECB8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BC398961C8D86B20078ECB8 /* GMCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				1BC398971C8D87190078ECB8 /* GMCalendarViewController.h */,
+				1BC398981C8D87190078ECB8 /* GMCalendarViewController.m */,
+				1BC398991C8D87190078ECB8 /* GMCalendarViewController.xib */,
+			);
+			name = GMCalendarView;
+			sourceTree = "<group>";
+		};
+		1BC3989C1C8D8A510078ECB8 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				1BC3989D1C8D8A770078ECB8 /* Preferences.h */,
+				1BC3989E1C8D8A770078ECB8 /* Preferences.m */,
+			);
+			name = Preferences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC3989B1C8D87190078ECB8 /* GMCalendarViewController.xib in Resources */,
 				1BC3988C1C8D86A80078ECB8 /* Assets.xcassets in Resources */,
 				1BC3988F1C8D86A80078ECB8 /* MainMenu.xib in Resources */,
 			);
@@ -141,6 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC3988A1C8D86A80078ECB8 /* main.m in Sources */,
+				1BC3989A1C8D87190078ECB8 /* GMCalendarViewController.m in Sources */,
+				1BC3989F1C8D8A770078ECB8 /* Preferences.m in Sources */,
 				1BC398871C8D86A80078ECB8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
