@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BC398871C8D86A80078ECB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC398861C8D86A80078ECB8 /* AppDelegate.m */; };
+		1BC3988A1C8D86A80078ECB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC398891C8D86A80078ECB8 /* main.m */; };
+		1BC3988C1C8D86A80078ECB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC3988B1C8D86A80078ECB8 /* Assets.xcassets */; };
+		1BC3988F1C8D86A80078ECB8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC3988D1C8D86A80078ECB8 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BC398821C8D86A80078ECB8 /* GMCalendarViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMCalendarViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BC398851C8D86A80078ECB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1BC398861C8D86A80078ECB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1BC398891C8D86A80078ECB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BC3988B1C8D86A80078ECB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BC3988E1C8D86A80078ECB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1BC398901C8D86A80078ECB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BC3987F1C8D86A80078ECB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BC398791C8D86A80078ECB8 = {
+			isa = PBXGroup;
+			children = (
+				1BC398841C8D86A80078ECB8 /* GMCalendarViewDemo */,
+				1BC398831C8D86A80078ECB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BC398831C8D86A80078ECB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BC398821C8D86A80078ECB8 /* GMCalendarViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BC398841C8D86A80078ECB8 /* GMCalendarViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1BC398851C8D86A80078ECB8 /* AppDelegate.h */,
+				1BC398861C8D86A80078ECB8 /* AppDelegate.m */,
+				1BC3988B1C8D86A80078ECB8 /* Assets.xcassets */,
+				1BC3988D1C8D86A80078ECB8 /* MainMenu.xib */,
+				1BC398901C8D86A80078ECB8 /* Info.plist */,
+				1BC398881C8D86A80078ECB8 /* Supporting Files */,
+			);
+			path = GMCalendarViewDemo;
+			sourceTree = "<group>";
+		};
+		1BC398881C8D86A80078ECB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BC398891C8D86A80078ECB8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BC398811C8D86A80078ECB8 /* GMCalendarViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BC398931C8D86A80078ECB8 /* Build configuration list for PBXNativeTarget "GMCalendarViewDemo" */;
+			buildPhases = (
+				1BC3987E1C8D86A80078ECB8 /* Sources */,
+				1BC3987F1C8D86A80078ECB8 /* Frameworks */,
+				1BC398801C8D86A80078ECB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GMCalendarViewDemo;
+			productName = GMCalendarViewDemo;
+			productReference = 1BC398821C8D86A80078ECB8 /* GMCalendarViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BC3987A1C8D86A80078ECB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Geomatix Laboratoriess S.R.O.";
+				TargetAttributes = {
+					1BC398811C8D86A80078ECB8 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1BC3987D1C8D86A80078ECB8 /* Build configuration list for PBXProject "GMCalendarViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BC398791C8D86A80078ECB8;
+			productRefGroup = 1BC398831C8D86A80078ECB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BC398811C8D86A80078ECB8 /* GMCalendarViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BC398801C8D86A80078ECB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC3988C1C8D86A80078ECB8 /* Assets.xcassets in Resources */,
+				1BC3988F1C8D86A80078ECB8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BC3987E1C8D86A80078ECB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC3988A1C8D86A80078ECB8 /* main.m in Sources */,
+				1BC398871C8D86A80078ECB8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1BC3988D1C8D86A80078ECB8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BC3988E1C8D86A80078ECB8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BC398911C8D86A80078ECB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1BC398921C8D86A80078ECB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1BC398941C8D86A80078ECB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GMCalendarViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = geomatix.cz.GMCalendarViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1BC398951C8D86A80078ECB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GMCalendarViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = geomatix.cz.GMCalendarViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BC3987D1C8D86A80078ECB8 /* Build configuration list for PBXProject "GMCalendarViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC398911C8D86A80078ECB8 /* Debug */,
+				1BC398921C8D86A80078ECB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BC398931C8D86A80078ECB8 /* Build configuration list for PBXNativeTarget "GMCalendarViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC398941C8D86A80078ECB8 /* Debug */,
+				1BC398951C8D86A80078ECB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BC3987A1C8D86A80078ECB8 /* Project object */;
+}
