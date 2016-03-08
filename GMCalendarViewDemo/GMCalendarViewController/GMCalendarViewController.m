@@ -8,13 +8,14 @@
 
 #import "GMCalendarViewController.h"
 
-@interface GMCalendarViewController () {
+@interface GMCalendarViewController () <NSCollectionViewDataSource, NSCollectionViewDelegate>
+{
 
 }
 
 @property (nonatomic, retain) NSView *parentView;
+@property (weak) IBOutlet NSCollectionView *collectionView;
 
-@property (nonatomic, retain) IBOutlet NSCollectionView *streamCollectionView;
 
 @end
 
@@ -31,13 +32,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+	// set up flow layoit
+	[self updateLayout];
 }
 
+- (void) viewDidAppear
+{
+	
+}
+
+#pragma mark -
+
+- (void) setMonthFormat:(BOOL)monthFormat
+{
+	_monthFormat = monthFormat;
+	[self updateLayout];
+}
+
+#pragma mark -
 
 - (void) reloadData
 {
-	[self.streamCollectionView reloadData];
+	[self.collectionView reloadData];
+}
+
+
+- (void) updateLayout
+{
+	
 }
 
 @end

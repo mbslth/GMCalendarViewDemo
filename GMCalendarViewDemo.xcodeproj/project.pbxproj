@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1A41191C8EF1D3004A4712 /* GMCalendarMonthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1A41181C8EF1D3004A4712 /* GMCalendarMonthCell.xib */; };
+		1B1A411D1C8F1D61004A4712 /* GMDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1A411B1C8F1D61004A4712 /* GMDayCell.m */; };
+		1B1A411E1C8F1D61004A4712 /* GMDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1A411C1C8F1D61004A4712 /* GMDayCell.xib */; };
 		1BC398871C8D86A80078ECB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC398861C8D86A80078ECB8 /* AppDelegate.m */; };
 		1BC3988A1C8D86A80078ECB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC398891C8D86A80078ECB8 /* main.m */; };
 		1BC3988C1C8D86A80078ECB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC3988B1C8D86A80078ECB8 /* Assets.xcassets */; };
@@ -14,9 +17,14 @@
 		1BC3989A1C8D87190078ECB8 /* GMCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC398981C8D87190078ECB8 /* GMCalendarViewController.m */; };
 		1BC3989B1C8D87190078ECB8 /* GMCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC398991C8D87190078ECB8 /* GMCalendarViewController.xib */; };
 		1BC3989F1C8D8A770078ECB8 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC3989E1C8D8A770078ECB8 /* Preferences.m */; };
+		1BC398A71C8EED700078ECB8 /* GMCalendarMonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC398A61C8EED700078ECB8 /* GMCalendarMonthCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B1A41181C8EF1D3004A4712 /* GMCalendarMonthCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GMCalendarMonthCell.xib; path = GMCalendarViewController/GMCalendarMonthCell.xib; sourceTree = "<group>"; };
+		1B1A411A1C8F1D61004A4712 /* GMDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMDayCell.h; path = GMCalendarViewController/GMDayCell.h; sourceTree = "<group>"; };
+		1B1A411B1C8F1D61004A4712 /* GMDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMDayCell.m; path = GMCalendarViewController/GMDayCell.m; sourceTree = "<group>"; };
+		1B1A411C1C8F1D61004A4712 /* GMDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GMDayCell.xib; path = GMCalendarViewController/GMDayCell.xib; sourceTree = "<group>"; };
 		1BC398821C8D86A80078ECB8 /* GMCalendarViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMCalendarViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC398851C8D86A80078ECB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1BC398861C8D86A80078ECB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +37,8 @@
 		1BC398991C8D87190078ECB8 /* GMCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GMCalendarViewController.xib; path = GMCalendarViewController/GMCalendarViewController.xib; sourceTree = "<group>"; };
 		1BC3989D1C8D8A770078ECB8 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
 		1BC3989E1C8D8A770078ECB8 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
+		1BC398A51C8EED700078ECB8 /* GMCalendarMonthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMCalendarMonthCell.h; path = GMCalendarViewController/GMCalendarMonthCell.h; sourceTree = "<group>"; };
+		1BC398A61C8EED700078ECB8 /* GMCalendarMonthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMCalendarMonthCell.m; path = GMCalendarViewController/GMCalendarMonthCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +95,14 @@
 			isa = PBXGroup;
 			children = (
 				1BC398971C8D87190078ECB8 /* GMCalendarViewController.h */,
+				1B1A411A1C8F1D61004A4712 /* GMDayCell.h */,
+				1B1A411B1C8F1D61004A4712 /* GMDayCell.m */,
+				1B1A411C1C8F1D61004A4712 /* GMDayCell.xib */,
 				1BC398981C8D87190078ECB8 /* GMCalendarViewController.m */,
 				1BC398991C8D87190078ECB8 /* GMCalendarViewController.xib */,
+				1BC398A51C8EED700078ECB8 /* GMCalendarMonthCell.h */,
+				1BC398A61C8EED700078ECB8 /* GMCalendarMonthCell.m */,
+				1B1A41181C8EF1D3004A4712 /* GMCalendarMonthCell.xib */,
 			);
 			name = GMCalendarView;
 			sourceTree = "<group>";
@@ -157,9 +173,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1A41191C8EF1D3004A4712 /* GMCalendarMonthCell.xib in Resources */,
 				1BC3989B1C8D87190078ECB8 /* GMCalendarViewController.xib in Resources */,
 				1BC3988C1C8D86A80078ECB8 /* Assets.xcassets in Resources */,
 				1BC3988F1C8D86A80078ECB8 /* MainMenu.xib in Resources */,
+				1B1A411E1C8F1D61004A4712 /* GMDayCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +188,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1A411D1C8F1D61004A4712 /* GMDayCell.m in Sources */,
 				1BC3988A1C8D86A80078ECB8 /* main.m in Sources */,
+				1BC398A71C8EED700078ECB8 /* GMCalendarMonthCell.m in Sources */,
 				1BC3989A1C8D87190078ECB8 /* GMCalendarViewController.m in Sources */,
 				1BC3989F1C8D8A770078ECB8 /* Preferences.m in Sources */,
 				1BC398871C8D86A80078ECB8 /* AppDelegate.m in Sources */,
@@ -313,6 +333,7 @@
 				1BC398951C8D86A80078ECB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

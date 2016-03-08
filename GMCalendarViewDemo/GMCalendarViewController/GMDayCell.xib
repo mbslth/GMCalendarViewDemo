@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GMDayCell">
+            <connections>
+                <outlet property="textLabel" destination="Pvg-R5-djz" id="M0P-WK-6lC"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="226" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pvg-R5-djz">
+                    <rect key="frame" x="61" y="94" width="104" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Pvg-R5-djz" secondAttribute="height" multiplier="100:27" id="iwS-df-mom"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="MON" id="tj1-lj-TKW">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Pvg-R5-djz" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="5WE-R9-yeZ"/>
+                <constraint firstItem="Pvg-R5-djz" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="DAU-bR-xtB"/>
+            </constraints>
+            <point key="canvasLocation" x="367" y="418.5"/>
+        </customView>
+    </objects>
+</document>
