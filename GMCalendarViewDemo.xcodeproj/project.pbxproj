@@ -95,11 +95,11 @@
 			isa = PBXGroup;
 			children = (
 				1BC398971C8D87190078ECB8 /* GMCalendarViewController.h */,
+				1BC398981C8D87190078ECB8 /* GMCalendarViewController.m */,
+				1BC398991C8D87190078ECB8 /* GMCalendarViewController.xib */,
 				1B1A411A1C8F1D61004A4712 /* GMDayCell.h */,
 				1B1A411B1C8F1D61004A4712 /* GMDayCell.m */,
 				1B1A411C1C8F1D61004A4712 /* GMDayCell.xib */,
-				1BC398981C8D87190078ECB8 /* GMCalendarViewController.m */,
-				1BC398991C8D87190078ECB8 /* GMCalendarViewController.xib */,
 				1BC398A51C8EED700078ECB8 /* GMCalendarMonthCell.h */,
 				1BC398A61C8EED700078ECB8 /* GMCalendarMonthCell.m */,
 				1B1A41181C8EF1D3004A4712 /* GMCalendarMonthCell.xib */,

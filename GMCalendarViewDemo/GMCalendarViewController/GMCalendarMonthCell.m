@@ -45,7 +45,14 @@ NSString * const DAY_CELL_ID		=	@"GMDayCell";
 
 - (void) viewDidLoad
 {
+	amountOfDays = [self daysInMonth];
+	amountOfWeeks = [self numberOfWeeks];
+	
+	self.monthLabel.stringValue = [self monthName];
+	
 	[self.collectionView registerClass:[GMDayCell class] forItemWithIdentifier:DAY_CELL_ID];
+	
+	
 	
 }
 
@@ -54,6 +61,8 @@ NSString * const DAY_CELL_ID		=	@"GMDayCell";
 	BOOL mondayStart = [[note object] boolValue];
 	self.weekStartOnMonday = mondayStart;
 	
+	amountOfDays = [self daysInMonth];
+	amountOfWeeks = [self numberOfWeeks];
 	[self.collectionView reloadData];
 }
 
@@ -90,20 +99,21 @@ NSString * const DAY_CELL_ID		=	@"GMDayCell";
 	if (section == 0) {
 		return 7;
 	} else {
-		return [self numberOfWeeks] * 7;	// fill with spaces
+		return amountOfWeeks * 7;	// fill with spaces
 	}
 }
 
 - (NSCollectionViewItem *) collectionView:(NSCollectionView *)collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath
 {
 	
+
 	GMDayCell *item = [collectionView makeItemWithIdentifier:DAY_CELL_ID
 															 forIndexPath:indexPath];
 	// Configure the item with an image from the app's data structures
 	if (indexPath.section == 0) {
-		item.textField.stringValue = [self dateName:indexPath.item];
+		item.textLabel.stringValue = [self dayName:indexPath.item];
 	} else {
-		item.textField.stringValue = [self dateName:indexPath.item];
+		item.textLabel.stringValue = [self dateName:indexPath.item];
 	}
 	return item;
 }
@@ -167,5 +177,12 @@ NSString * const DAY_CELL_ID		=	@"GMDayCell";
 								forDate:[self firstDay]].length;
 }
 
+
+- (NSString *) monthName
+{
+	NSArray *month = @[ @"January", @"February", @"March", @"April", @"May", @"June",
+					   @"July", @"August", @"September", @"October", @"November", @"December"];
+	return month[self.month];
+}
 
 @end

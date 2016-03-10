@@ -27,6 +27,9 @@
                             <collectionView id="Jn3-8H-3y5">
                                 <rect key="frame" x="0.0" y="0.0" width="635" height="381"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="EBR-nK-exo">
+                                    <size key="itemSize" width="50" height="50"/>
+                                </collectionViewFlowLayout>
                                 <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <outlet property="dataSource" destination="-2" id="5cm-5R-c8z"/>
