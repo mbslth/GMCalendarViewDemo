@@ -8,7 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 
+typedef NS_ENUM(NSInteger, GMDayCellColors) {
+	DayCellNormal = 0,
+	DayCellWeekend,
+	DayCellHoliday,
+	DayCellSpecial,
+};
+
+
 @interface GMDayCell : NSCollectionViewItem
 @property (weak) IBOutlet NSTextField *textLabel;
+@property (nonatomic, readwrite) GMDayCellColors cellColor;
 
 @end

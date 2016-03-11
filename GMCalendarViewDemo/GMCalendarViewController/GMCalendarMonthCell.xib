@@ -8,6 +8,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="GMCalendarMonthCell">
             <connections>
                 <outlet property="dayCollection" destination="Jn3-8H-3y5" id="qdc-15-Xzt"/>
+                <outlet property="flowLayout" destination="EBR-nK-exo" id="abL-1l-3Fv"/>
                 <outlet property="monthLabel" destination="zPB-3p-pfH" id="cH6-MZ-HZC"/>
                 <outlet property="view" destination="c22-O7-iKe" id="bhz-uU-n8l"/>
             </connections>

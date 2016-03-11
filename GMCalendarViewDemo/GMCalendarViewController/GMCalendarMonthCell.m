@@ -24,6 +24,7 @@ NSString * const DAY_CELL_ID		=	@"GMDayCell";
 }
 
 @property (nonatomic, retain) NSDate *startDate;
+@property (weak) IBOutlet NSCollectionViewFlowLayout *flowLayout;
 
 @end
 
@@ -52,7 +53,10 @@ NSString * const DAY_CELL_ID		=	@"GMDayCell";
 	
 	[self.collectionView registerClass:[GMDayCell class] forItemWithIdentifier:DAY_CELL_ID];
 	
-	
+	// set up border
+	self.view.wantsLayer = YES;
+	[self.view.layer setBorderWidth: 1];
+	[self.view.layer setBorderColor:[NSColor lightGrayColor].CGColor];
 	
 }
 
@@ -114,6 +118,11 @@ NSString * const DAY_CELL_ID		=	@"GMDayCell";
 		item.textLabel.stringValue = [self dayName:indexPath.item];
 	} else {
 		item.textLabel.stringValue = [self dateName:indexPath.item];
+		if (indexPath.item % 7 == 0 || indexPath.item % 7 == 6) {
+			item.cellColor = DayCellWeekend;
+		} else {
+			item.cellColor = DayCellNormal;
+		}
 	}
 	return item;
 }
