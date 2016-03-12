@@ -10,6 +10,7 @@
 		1B1A41191C8EF1D3004A4712 /* GMCalendarMonthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1A41181C8EF1D3004A4712 /* GMCalendarMonthCell.xib */; };
 		1B1A411D1C8F1D61004A4712 /* GMDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1A411B1C8F1D61004A4712 /* GMDayCell.m */; };
 		1B1A411E1C8F1D61004A4712 /* GMDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1A411C1C8F1D61004A4712 /* GMDayCell.xib */; };
+		1B42C1101C93E6B900531782 /* GMCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42C10F1C93E6B900531782 /* GMCalendarEvent.m */; };
 		1BC398871C8D86A80078ECB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC398861C8D86A80078ECB8 /* AppDelegate.m */; };
 		1BC3988A1C8D86A80078ECB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC398891C8D86A80078ECB8 /* main.m */; };
 		1BC3988C1C8D86A80078ECB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC3988B1C8D86A80078ECB8 /* Assets.xcassets */; };
@@ -25,6 +26,8 @@
 		1B1A411A1C8F1D61004A4712 /* GMDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMDayCell.h; path = GMCalendarViewController/GMDayCell.h; sourceTree = "<group>"; };
 		1B1A411B1C8F1D61004A4712 /* GMDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMDayCell.m; path = GMCalendarViewController/GMDayCell.m; sourceTree = "<group>"; };
 		1B1A411C1C8F1D61004A4712 /* GMDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GMDayCell.xib; path = GMCalendarViewController/GMDayCell.xib; sourceTree = "<group>"; };
+		1B42C10E1C93E6B900531782 /* GMCalendarEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMCalendarEvent.h; path = GMCalendarViewController/GMCalendarEvent.h; sourceTree = "<group>"; };
+		1B42C10F1C93E6B900531782 /* GMCalendarEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMCalendarEvent.m; path = GMCalendarViewController/GMCalendarEvent.m; sourceTree = "<group>"; };
 		1BC398821C8D86A80078ECB8 /* GMCalendarViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMCalendarViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC398851C8D86A80078ECB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1BC398861C8D86A80078ECB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				1BC398A51C8EED700078ECB8 /* GMCalendarMonthCell.h */,
 				1BC398A61C8EED700078ECB8 /* GMCalendarMonthCell.m */,
 				1B1A41181C8EF1D3004A4712 /* GMCalendarMonthCell.xib */,
+				1B42C10E1C93E6B900531782 /* GMCalendarEvent.h */,
+				1B42C10F1C93E6B900531782 /* GMCalendarEvent.m */,
 			);
 			name = GMCalendarView;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				1BC3989A1C8D87190078ECB8 /* GMCalendarViewController.m in Sources */,
 				1BC3989F1C8D8A770078ECB8 /* Preferences.m in Sources */,
 				1BC398871C8D86A80078ECB8 /* AppDelegate.m in Sources */,
+				1B42C1101C93E6B900531782 /* GMCalendarEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

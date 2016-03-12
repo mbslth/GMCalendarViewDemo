@@ -8,12 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-typedef NS_ENUM(NSInteger, GMDayCellColors) {
-	DayCellNormal = 0,
-	DayCellWeekend,
-	DayCellHoliday,
-	DayCellSpecial,
-};
+#import "GMCalendarEvent.h"
 
 
 @interface GMDayCell : NSCollectionViewItem

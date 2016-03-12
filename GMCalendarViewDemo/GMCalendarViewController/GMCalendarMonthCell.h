@@ -20,5 +20,9 @@ extern NSString * const VVVCalendarViewStartWeekDayChanged;
 
 @property (weak, nonatomic) IBOutlet NSCollectionView *dayCollection;
 
+//
+// Contains elements with CalendarEvent 
+//
+@property (nonatomic, retain) NSMutableArray *markedDays;
 
 @end

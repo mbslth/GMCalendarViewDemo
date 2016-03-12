@@ -97,9 +97,12 @@ NSString * const monthCellIdentifier	=	@"MonthCellIdentifier";
 			}
 		}
 	}
+//	NSIndexPath *middlePoint = [NSIndexPath indexPathForItem:currentMonthRecordIndex inSection:0];
+//	NSSet *ip = [NSSet setWithObject:middlePoint];
+//	[self.collectionView scrollToItemsAtIndexPaths:ip scrollPosition:NSCollectionViewScrollPositionTop];
 	[self.collectionView reloadData];
 }
-
+	
 #pragma mark -
 
 - (void) setMonthFormat:(BOOL)monthFormat

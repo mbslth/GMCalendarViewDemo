@@ -56,6 +56,11 @@
 	
 	self.view.wantsLayer = YES;
 	self.view.layer.backgroundColor = [(NSColor *)cColorSet[1] CGColor];
+	if (cellColor == DayCellSpecial || cellColor == DayCellSpecial) {
+		self.view.layer.cornerRadius = self.view.frame.size.height / 7.0;
+	} else {
+		self.view.layer.cornerRadius = 0.0;
+	}
 }
 
 @end

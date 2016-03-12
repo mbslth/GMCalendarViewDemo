@@ -49,7 +49,7 @@ NSString * const DAY_CELL_ID		=	@"GMDayCell";
 	amountOfDays = [self daysInMonth];
 	amountOfWeeks = [self numberOfWeeks];
 	
-	self.monthLabel.stringValue = [self monthName];
+	self.monthLabel.stringValue = [NSString stringWithFormat:@"%@, %ld",[self monthName], self.year];
 	
 	[self.collectionView registerClass:[GMDayCell class] forItemWithIdentifier:DAY_CELL_ID];
 	
@@ -58,6 +58,24 @@ NSString * const DAY_CELL_ID		=	@"GMDayCell";
 	[self.view.layer setBorderWidth: 1];
 	[self.view.layer setBorderColor:[NSColor lightGrayColor].CGColor];
 	
+}
+
+- (void) setMonth:(NSInteger)month
+{
+	_month = month;
+	self.monthLabel.stringValue = [NSString stringWithFormat:@"%@, %ld",[self monthName], self.year];
+}
+
+- (void) setYear:(NSInteger)year
+{
+	_year = year;
+	self.monthLabel.stringValue = [NSString stringWithFormat:@"%@, %ld",[self monthName], self.year];
+}
+
+- (void) setMarkedDays:(NSMutableArray *)markedDays
+{
+	_markedDays = markedDays;
+	[self.collectionView reloadData];
 }
 
 - (void) updateWeekStart:(NSNotification *) note
