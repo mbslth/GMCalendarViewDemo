@@ -30,8 +30,12 @@
 	[self.calendarView.layer setBorderWidth: 2];
 	[self.calendarView.layer setCornerRadius: 10];
 	
-	//	self.calendarViewController = [[GMCalendarViewController alloc] initWithView:self.calendarView];
+	//		self.calendarViewController = [[GMCalendarViewController alloc] initWithView:self.calendarView];
 	self.calendarViewController = [[GMCalendarViewController alloc] init];
+	self.calendarViewController.view.frame = CGRectMake(0, 0,
+											 self.calendarView.frame.size.width,
+											   self.calendarView.frame.size.height);
+												   
 	[self.calendarView addSubview:self.calendarViewController.view];
 	
 	self.calendarViewController.currentDate = [NSDate date];

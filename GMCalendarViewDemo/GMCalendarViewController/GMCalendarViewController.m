@@ -52,7 +52,6 @@ NSString * const monthCellIdentifier	=	@"MonthCellIdentifier";
 	[self.collectionView registerClass:[GMCalendarMonthCell class]
 				 forItemWithIdentifier:monthCellIdentifier];
 
-//	[self.parentView addSubview:self.collectionview];
 	
 	
 	[self prepareData];
@@ -88,7 +87,7 @@ NSString * const monthCellIdentifier	=	@"MonthCellIdentifier";
 	NSInteger currentMonthRecordIndex = -1;
 	NSInteger count = 0;
 	for (NSInteger y = minimalYear; y <= maximalYer; y++) {
-		for (int m = 1; m <= 12; m++) {
+		for (int m = 0; m < 12; m++) {
 			[dataArray addObject:@[@(m), @(y)]];
 			if (m == middleYear && y == middleYear ) {
 				currentMonthRecordIndex = count;
